@@ -1,7 +1,6 @@
 package alex.sofka.reto;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -48,20 +47,23 @@ public class Test {
         allPoints = 0;
     }
 
-    public void loadData(String file) throws FileNotFoundException, IOException{
-
-        BufferedReader br = new BufferedReader(new FileReader(file));
+    public void loadData(String file) throws IOException{
 
         String line;
         Question q;
         ArrayList<Answer> answers = new ArrayList<>();
         String textQuestion = "";
-        int pointsQuestion = 0, rightOption = 0;
-        boolean question = false, answer = false, points = false;
+        int pointsQuestion = 0;
+        int rightOption = 0;
+        boolean question = false;
+        boolean answer = false;
+        boolean points = false;
+
+        try(BufferedReader br = new BufferedReader(new FileReader(file))) {
 
         while ((line = br.readLine()) != null){
 
-            try {
+
 
                 if(line.startsWith(";P;")){
                     textQuestion = line.substring(3);
@@ -80,7 +82,7 @@ public class Test {
                     }
                 }
 
-                if(question && answer && points && (answers.size() >= 2 && answers.size() <=4)){
+                if(question && answer && points && answers.size() >= 2 ){
                     answers.get(rightOption - 1).setRight(true);
 
                     q = new Question(textQuestion, answers, pointsQuestion);
@@ -93,16 +95,13 @@ public class Test {
                     answers = new ArrayList<>();
                 }
 
-            } catch (Exception ex) {
-                question = false;
-                answer = false;
-                points =false;
-                answers = new ArrayList<>();
             }
-
+        }catch (Exception ex) {
+            question = false;
+            answer = false;
+            points =false;
+            answers = new ArrayList<>();
         }
-
-        br.close();
     }
 
     public void makeTest(){
