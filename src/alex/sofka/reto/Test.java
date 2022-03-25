@@ -5,11 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Test {
 
-    private ArrayList<Question> questions;
+    private final ArrayList<Question> questions;
     private int allPoints;
     private int actuallyQuestion;
 
@@ -19,7 +20,7 @@ public class Test {
         actuallyQuestion = 0;
     }
 
-    public ArrayList<Question> getQuestions() {
+    public List<Question> getQuestions() {
         return questions;
     }
 
@@ -119,16 +120,18 @@ public class Test {
                 q = questions.get(i);
                 q.showQuestion();
 
-                System.out.println("Introduce la respuesta");
+                System.out.println("Introduce el numero de la respuesta (1 - 4) o 0 para salir");
                 answer = write.nextInt();
-                answer = answer <= 4 ? answer : 4;
 
-                if (q.checkAnswer(answer)){
+                if( !(answer >= 1 && answer <= 4)){
+                    System.out.println("Has abandonado te vas con tu premio");
+                    break;
+                } else if (q.checkAnswer(answer)){
                     System.out.println("Has acertado");
                     allPoints+=q.getPoints();
-                }
-                else {
+                } else {
                     System.out.println("Fallaste!!!");
+                    allPoints = 0;
                     break;
                 }
 
@@ -136,7 +139,7 @@ public class Test {
             }
         }
 
-        System.out.println("has obtenido " + allPoints + "puntos");
+        System.out.println("has obtenido " + allPoints + " puntos");
 
     }
 }
