@@ -1,0 +1,35 @@
+;P;¿Quien es el presidente de colombia?
+Gustavo Petro
+Enrique Capriles
+Ivan Duque
+Alvaro Uribe
+;R;3
+100
+;P;¿Cuantos puestos tiene el congreso?
+108
+117
+123
+96
+;R;1
+200
+;P;¿Cuantas ramas de poder tiene colombia?
+1
+2
+3
+5
+;R;3
+300
+;P;¿Cual es la rama de poder encargada de impartir justicia?
+Rama Ejecutiva
+Rama Legislativa
+Rama democratica
+Rama Judicial 
+;R;4
+400
+;P;¿En que año se escribio la constitución colombiana?
+1999
+1989
+1811
+1991
+;R;4
+500

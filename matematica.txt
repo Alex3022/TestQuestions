@@ -1,0 +1,35 @@
+;P;¿Cuanto es 2+2?
+2
+7
+1
+4
+;R;4
+100
+;P;¿Cual es la derivada de 2x+1?
+2+1
+3
+2
+2x
+;R;3
+200
+;P;¿cual es la integral indefinida de x?
+x^2+c
+2x
+x^2
+x+1
+;R;1
+300
+;P;¿Como se llama el teorema para calcular probabilidades apartir de condicionales?
+Teorema de Chevishev
+Teorema de Bayes
+Teorema de Probabilidad relativa
+Teorema de la relatividad 
+;R;3
+400
+;P;¿Cual es la figura geometrica que cubre mejor un area?
+Circulo
+Cuadrado
+Hexagono
+triangulo
+;R;3
+500

@@ -1,0 +1,35 @@
+;P;¿En que año comenzo la guerra ruso-ucraniana?
+1998
+2004
+1945
+2022
+;R;4
+100
+;P;¿En que fecha se firmo la independencia de colombia?
+20 julio de 1810
+4 de julio de 1804
+8 de agosto de 1819
+24 de septiembre de 1845
+;R;1
+200
+;P;¿Que día asesinaron al archiduque Fernando Francisco?
+28 de junio
+23 de agosto
+1 de enero
+30 de febrero
+;R;1
+300
+;P;¿En que pais se dio la revolucion industrial?
+Francia
+España
+Italia
+Gran bretaña
+;R;4
+400
+;P;¿En que año gano Einstein el novel de fisica?
+1899
+1945
+1921
+1918
+;R;3
+500

@@ -1,0 +1,35 @@
+;P;¿Cual es la aceleracion que produce la gravedad sobre un cuerpo?
+9.8m/s2
+10 m^2/s
+1.6 m/s^2
+8 kg*m/s^2
+;R;1
+100
+;P;¿Cual es la unidades que conforman un newteon [N]?
+kg*m
+m/s
+kg*m/s^2
+kg*s
+;R;3
+200
+;P;¿Cuanto es la velocidad de la luz?
+300000km/s
+18000km/s
+200000km/s
+15000km/s
+;R;1
+300
+;P;¿Como se llama el teorema para calcular probabilidades apartir de condicionales?
+Teorema de Chevishev
+Teorema de Bayes
+Teorema de Probabilidad relativa
+Teorema de la relatividad 
+;R;3
+400
+;P;¿Cual es la figura geometrica que cubre mejor un area?
+Circulo
+Cuadrado
+Hexagono
+triangulo
+;R;3
+500

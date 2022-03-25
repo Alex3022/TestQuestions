@@ -43,12 +43,20 @@ public class Main {
     public static void playTest(){
         Test t = new Test();
 
+        System.out.println("Ingresa tu nickname:");
+        Scanner in = new Scanner(System.in);
+        String nickname = in.next();
+        Player player = new Player(nickname, 0);
+
         try{
             t.loadData(banco_de_preguntas[(int) Math.floor(Math.random()*(4 +1)+0)]);
             t.makeTest();
+            player.setPoints(t.getAllPoints());
         } catch (IOException ex){
             System.out.println(ex.getMessage());
         }
+
+        player.writeScore();
     }
 
 }

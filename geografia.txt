@@ -1,0 +1,35 @@
+;P;¿Cual es la capital de España?
+Paris
+Madrid
+Lisboa
+Londres
+;R;2
+100
+;P;¿A que continente pertenece Australia?
+Oceania
+America
+Europa
+Asia
+;R;1
+200
+;P;¿Cual es la montaña mas alta del mundo?
+Olimpo
+Montezuma
+Nevado del Ruiz
+Everest
+;R;4
+300
+;P;¿Cual es el pais mas grande del mundo?
+China
+USA
+Kazajistan
+Rusia
+;R;4
+400
+;P;¿En que cardinalidad de asia se encuentra ubicada Mongolia?
+Asia Central
+Medio Oriente
+Sudeste Asiatico
+Asia septentrional
+;R;3
+500
