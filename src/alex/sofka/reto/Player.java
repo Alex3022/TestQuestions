@@ -1,7 +1,6 @@
 package alex.sofka.reto;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.*;
 
 public class Player {
 
@@ -41,6 +40,22 @@ public class Player {
     }
 
     public void showAcumulateScore(){
+
+        int acumulate = 0;
+
+        try(BufferedReader br = new BufferedReader(new FileReader("scores/"+nickname+".txt"))){
+            String line;
+            while ((line = br.readLine()) != null){
+                acumulate+=Integer.parseInt(line);
+            }
+
+            System.out.println("El acumulado de premios que tienes es: " + acumulate);
+
+        } catch (FileNotFoundException e) {
+            System.out.println("No se tiene registro de tus premios, por favor juega primero");
+        } catch (IOException e) {
+            System.out.println("Hubo un error comunicate con alexbby");
+        }
 
     }
 }

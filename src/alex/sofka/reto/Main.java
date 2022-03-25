@@ -21,6 +21,9 @@ public class Main {
                     playTest();
                     break;
                 case 2:
+                    showScore();
+                    break;
+                case 3:
                     play = false;
                     System.out.println("Hasta pronto, vuelve!!");
                     break;
@@ -35,9 +38,19 @@ public class Main {
     public static void imprimirMenu(){
         System.out.println("Bienvenido A preguntas y Respuestas");
         System.out.println("1. Jugar");
-        System.out.println("2. Exit");
+        System.out.println("2. tu acumulado(Score)");
+        System.out.println("3. Exit");
         System.out.println("Selecciona una opcion:");
 
+    }
+
+    public static void showScore(){
+        System.out.println("Ingresa tu nickname:");
+        Scanner in = new Scanner(System.in);
+        String nickname = in.next();
+        Player player = new Player(nickname, 0);
+
+        player.showAcumulateScore();
     }
 
     public static void playTest(){
@@ -57,6 +70,7 @@ public class Main {
         }
 
         player.writeScore();
+        player.showAcumulateScore();
     }
 
 }
